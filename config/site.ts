@@ -1,69 +1,35 @@
-export type SiteConfig = typeof siteConfig;
-
 export const siteConfig = {
-	name: "Next.js + NextUI",
-	description: "Make beautiful websites regardless of your design experience.",
-	navItems: [
-		{
-			label: "Home",
-			href: "/",
-		},
+  name: 'Ronald Lopes | Portfolio',
+  description: 'I am Ronald Lopes, Product designer and Front-end Developer.',
+  keywords:
+    'UI, UX, Product, Front-end, Developer, Designer, Ronald, Lopes, Portfolio',
+  navItems: [
     {
-      label: "Docs",
-      href: "/docs",
+      id: 1,
+      label: 'Home',
+      href: '#',
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      id: 2,
+      label: 'About',
+      href: '#about',
     },
     {
-      label: "Blog",
-      href: "/blog",
+      id: 3,
+      label: 'Work',
+      href: '#work',
     },
     {
-      label: "About",
-      href: "/about",
-    }
-	],
-	navMenuItems: [
-		{
-			label: "Profile",
-			href: "/profile",
-		},
-		{
-			label: "Dashboard",
-			href: "/dashboard",
-		},
-		{
-			label: "Projects",
-			href: "/projects",
-		},
-		{
-			label: "Team",
-			href: "/team",
-		},
-		{
-			label: "Calendar",
-			href: "/calendar",
-		},
-		{
-			label: "Settings",
-			href: "/settings",
-		},
-		{
-			label: "Help & Feedback",
-			href: "/help-feedback",
-		},
-		{
-			label: "Logout",
-			href: "/logout",
-		},
-	],
-	links: {
-		github: "https://github.com/nextui-org/nextui",
-		twitter: "https://twitter.com/getnextui",
-		docs: "https://nextui.org",
-		discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev"
-	},
-};
+      id: 4,
+      label: 'Resume',
+      href: '#resume',
+    },
+    {
+      id: 5,
+      label: 'Get in touch',
+      href: '#get-in-touch',
+    },
+  ],
+}
+
+export type SiteConfig = typeof siteConfig
