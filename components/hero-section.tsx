@@ -1,7 +1,7 @@
 import { Button } from '@nextui-org/button'
 import Link from 'next/link'
 
-export default function Home() {
+export function HeroSection() {
   return (
     <section className="mt-14 flex h-[calc(100vh-56px)] flex-col items-center justify-center">
       <p className="text-lg font-light text-gray-700 dark:text-gray-300">

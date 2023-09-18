@@ -1,11 +1,11 @@
-import Intro from '@/components/intro'
+import { HeroSection } from '@/components/hero-section'
 import { Header } from '@/components/header'
 
 export default function Home() {
   return (
     <>
       <Header />
-      <Intro />
+      <HeroSection />
     </>
   )
 }
