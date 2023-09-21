@@ -9,9 +9,14 @@ module.exports = {
     './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        photo: "url('/images/photo.png')",
+      },
+    },
     fontFamily: {
       sans: ['Outfit', 'sans-serif'],
+      cursive: ['Yellowtail', 'cursive'],
     },
   },
   darkMode: 'class',
