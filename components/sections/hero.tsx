@@ -1,5 +1,6 @@
-import { Button } from '@nextui-org/button'
-import Link from 'next/link'
+'use client'
+
+import { Button, Link } from '@nextui-org/react'
 
 export function Hero() {
   return (
@@ -12,17 +13,17 @@ export function Hero() {
         <br /> crafting experiences
         <br /> that resonate with users.
       </h2>
-      <Link className="my-8" href="#">
-        <Button
-          className="px-6 font-semibold"
-          radius="full"
-          color="secondary"
-          variant="shadow"
-          size="lg"
-        >
-          Check out my work
-        </Button>
-      </Link>
+      <Button
+        as={Link}
+        href="#work"
+        className="my-8 px-6 font-semibold"
+        radius="full"
+        color="secondary"
+        variant="shadow"
+        size="lg"
+      >
+        Check out my work
+      </Button>
     </section>
   )
 }
