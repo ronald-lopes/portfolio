@@ -6,9 +6,9 @@ export const Specializing = () => {
   return (
     <>
       <section className="mx-auto my-8 flex w-full items-center justify-center">
-        <div className=" max-w-[90%] flex-col items-center justify-center px-4 sm:max-w-5xl">
+        <div className="max-w-[90%] flex-col items-center justify-center px-4 sm:max-w-[80%] md:max-w-5xl">
           <Title title="What I do" subtitle="Specializing" />
-          <div className="my-8 flex flex-col justify-between gap-4 sm:flex-row">
+          <div className="my-8 flex flex-col justify-between gap-4 md:flex-row">
             <SpecializingCard
               icon={
                 <UserFocus

@@ -11,7 +11,7 @@ interface SpecializingCardProps {
 export const SpecializingCard = (props: SpecializingCardProps) => {
   return (
     <Card
-      shadow="sm"
+      shadow="none"
       className="border border-violet-200 bg-violet-50 dark:border-content1 dark:bg-content1"
     >
       <CardBody className="gap-[0.1rem]">
