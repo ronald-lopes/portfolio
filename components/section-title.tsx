@@ -11,7 +11,7 @@ export const Title = (props: TitleProps) => {
       id={props.id}
       className={
         props.className ||
-        'my-4 flex flex-col items-center justify-center sm:mb-8 sm:mt-16'
+        'my-4 mt-16 flex flex-col items-center justify-center sm:mb-8'
       }
     >
       <span
