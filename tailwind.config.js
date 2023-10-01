@@ -13,6 +13,17 @@ module.exports = {
       backgroundImage: {
         photo: "url('/images/photo.png')",
       },
+      keyframes: {
+        rocket: {
+          '0%': { transform: 'translateY(0)' },
+          '80%': { opacity: '0' },
+          '90%': { transform: 'translate(24px, -32px)' },
+          '100%': { opacity: '0', display: 'none' },
+        },
+      },
+      animation: {
+        rocket: 'rocket 1s ease-in-out forwards',
+      },
     },
     fontFamily: {
       sans: ['Outfit', 'sans-serif'],
