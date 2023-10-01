@@ -4,7 +4,8 @@ import { ThemeSwitch } from './theme-switch'
 import { siteConfig } from '@/config/site'
 import React from 'react'
 import Image from 'next/image'
-import { Tabs, Tab } from '@nextui-org/react'
+import { Button } from '@nextui-org/react'
+import Link from 'next/link'
 
 export const Header = () => {
   return (
@@ -22,28 +23,21 @@ export const Header = () => {
 
         <div className="flex">
           <ul className="hidden items-center justify-between sm:flex">
-            <Tabs
-              aria-label="Menu items"
-              variant="underlined"
-              size="md"
-              classNames={{
-                tabList: 'relative w-full gap-0 rounded-none p-1',
-                cursor: 'w-[50%]',
-                tab: 'p-0',
-                tabContent: 'p-0 hover:text-gray-500 dark:hover:text-gray-100',
-              }}
-            >
-              {siteConfig.navItems.map((item) => (
-                <Tab
-                  key={item.id}
-                  title={
-                    <a className="px-2 py-3 text-[1rem]" href={item.href}>
-                      {item.label}
-                    </a>
-                  }
-                />
+            <div className="flex items-center">
+              {siteConfig.navItems.map((item, index) => (
+                <Button
+                  key={index}
+                  as={Link}
+                  href={item.href}
+                  size="sm"
+                  className="text-sm"
+                  radius="full"
+                  variant="light"
+                >
+                  {item.label}
+                </Button>
               ))}
-            </Tabs>
+            </div>
           </ul>
           <ThemeSwitch className="p-2" />
         </div>
