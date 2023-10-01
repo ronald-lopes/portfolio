@@ -29,9 +29,8 @@ export function Work() {
       <Button
         as={Link}
         className="mt-8 gap-0 px-6"
-        color="secondary"
+        color="primary"
         radius="full"
-        variant="shadow"
         endContent={
           <ArrowRight size={16} weight="bold" className="ml-2 mt-[0.1rem]" />
         }

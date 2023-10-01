@@ -18,7 +18,7 @@ export function Hero() {
         href="#work"
         className="my-8 px-6 font-semibold"
         radius="full"
-        color="secondary"
+        color="primary"
         variant="shadow"
         size="lg"
       >
